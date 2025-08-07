@@ -1,12 +1,22 @@
-# React + Vite
+# 📅 Day 1 – Introduction to React & JSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✅ What I Learned
 
-Currently, two official plugins are available:
+- What is React and why use it
+- Understanding JSX syntax
+- Creating first functional component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Code Built
 
-## Expanding the ESLint configuration
+- `App.jsx`: Displays a simple message
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Takeaways
+
+- JSX must return a single root element
+- Component names must start with a capital letter
+- You can embed JS expressions using curly braces
+
+## 🔁 To Review Tomorrow
+
+- Props and how to pass data between components
+ 
