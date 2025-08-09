@@ -5,24 +5,18 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [first, setFirst] = useState(0)
-
-  useEffect(() => {
-    alert("Welcome to my page");
-  }, []);
+  const [count, setCount] = useState(0);
+  const [first, setFirst] = useState(0);
+  const [color, setColor] = useState(0);
 
   useEffect(() => {
     alert("Count was changed");
+    setColor(color + 1);
   }, [count]);
-
-  useEffect(() => {
-    alert("First was changed");
-  }, [first]);
 
   return (
     <>
-    <Navbar color={"navy" + "blue"}/>
+      <Navbar color={"navy " + "blue" + color} />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
