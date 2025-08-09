@@ -1,12 +1,35 @@
-# React + Vite
+# 📅 Day 3 – State, Hooks, and useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📘 What I Learned
 
-Currently, two official plugins are available:
+- **State in React**:
+  - State stores **dynamic data** in a component.
+  - Unlike props, state is **managed inside the component**.
+  - Updating state triggers a **re-render** of the component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hooks**:
+  - Introduced in React 16.8 to allow state and other features in functional components.
+  - Common hooks:
+    - `useState` → For managing state.
+    - `useEffect` → For side effects (e.g., fetching data, timers).
 
-## Expanding the ESLint configuration
+- **useEffect**:
+  - Runs after the component renders.
+  - Can be used for:
+    - Fetching API data
+    - Setting up event listeners
+    - Updating the document title
+  - Dependency array `[]` controls when the effect runs:
+    - Empty `[]` → Runs only on mount.
+    - With variables → Runs when those variables change.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 Key Takeaways
+State allows components to be interactive and dynamic.
+Hooks bring state and lifecycle features to functional components.
+useEffect is crucial for handling side effects like fetching data or working with the DOM.
+Always clean up effects (e.g., clearInterval) to avoid memory leaks.
+
+🔁 Next Focus
+Learn about Conditional Rendering.
+Explore Lists & Keys in React.
+Start integrating API calls into components.
