@@ -30,5 +30,3 @@ Cleanup function usage.
 🔁 Next Focus
 Learn about Conditional Rendering in React.
 Practice Lists & Keys.
-
-

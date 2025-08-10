@@ -12,7 +12,6 @@ function App() {
     console.log(`rerendering and the value of a is ${a.current}`)
   })
   
-
   return (
     <>
       <div>
@@ -39,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -12,7 +12,6 @@ function App() {
     btnRef.current.style.backgroundColor = "red"
   }, [])
   
-
   return (
     <>
       <div>
