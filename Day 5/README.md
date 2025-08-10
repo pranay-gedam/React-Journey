@@ -1,12 +1,25 @@
-# React + Vite
+# 📅 Day 5 – Conditional Rendering, Rendering Lists & map() Function
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📘 What I Learned
 
-Currently, two official plugins are available:
+- **Conditional Rendering**:
+  - Using `if`, `else`, and ternary operators to render UI based on conditions.
+  - Using `&&` operator for short-circuit rendering.
+  - Best practices to avoid too many nested conditions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Rendering Lists**:
+  - Displaying multiple elements from an array in JSX.
+  - The importance of using a **unique `key` prop** for list items.
 
-## Expanding the ESLint configuration
+- **map() Function in JSX**:
+  - Iterating over arrays to dynamically generate UI elements.
+  - Returning JSX elements from `.map()` for rendering lists.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 Key Takeaways
+Conditional rendering controls what appears on screen based on state or props.
+The map() function is essential for dynamic list rendering.
+Always use unique keys for list items to improve performance and avoid warnings.
+
+🔁 Next Focus
+Learn about Forms and Controlled Components.
+Handle user input and state updates.
