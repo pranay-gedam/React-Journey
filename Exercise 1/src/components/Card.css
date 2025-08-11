@@ -1,9 +1,0 @@
-.card {
-    display: flex;
-}
-
-.cards {
-    border: 2px solid rgb(58, 215, 82);
-    height: 250px;
-    width: 250px;
-}
