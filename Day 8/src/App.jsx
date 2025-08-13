@@ -16,6 +16,16 @@ function App() {
           <button>Add</button>
         </div>
           <h2 className='text-lg font-bold'>Your Todos</h2>
+          <div className="todos">
+            <div className="todo flex">
+              <div className="text">
+                <div className="buttons">
+                  <button>Edit</button>
+                  <button>Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </>
   )
