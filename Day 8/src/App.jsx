@@ -81,24 +81,27 @@ function App() {
               onChange={handleChange}
               value={todo}
               type="text"
-              className="w-full rounded-full px-5 py-1"
+              className="w-full rounded-full px-5 py-1 bg-red-100"
             />
             <button
               onClick={handleAdd}
               disabled={todo.length <= 3}
-              className="bg-violet-800 mx-2 hover:bg-violet-950 disabled:bg-violet-700 p-4 py-2 text-sm font-bold text-white rounded-full"
+              className="bg-violet-800 mx-2 hover:bg-violet-950 disabled:bg-violet-700 p-4 py-2 text-sm font-bold text-white rounded-full cursor-pointer"
             >
               Save
             </button>
           </div>
         </div>
         <input
-          className="my-4" id="show"
+          className="my-4"
+          id="show"
           onChange={toggleFinished}
           type="checkbox"
           checked={showFinished}
         />
-        <label className="mx-2" htmlFor="show">Show Finished</label>
+        <label className="mx-2" htmlFor="show">
+          Show Finished
+        </label>
         <hr />
         <h2 className="text-2xl font-bold">Your Todos</h2>
         <div className="todos">
@@ -122,7 +125,7 @@ function App() {
                   <div className="buttons flex h-full">
                     <button
                       onClick={(e) => handleEdit(e, item.id)}
-                      className="bg-violet-800 hover:bg-violet-950 p-2 py-1 text-sm font-bold text-white rounded-md mx-1"
+                      className="bg-violet-800 hover:bg-violet-950 p-2 py-1 text-sm font-bold text-white rounded-md mx-1 cursor-pointer"
                     >
                       <FaEdit />
                     </button>
@@ -130,7 +133,7 @@ function App() {
                       onClick={(e) => {
                         handleDelete(e, item.id);
                       }}
-                      className="bg-violet-800 hover:bg-violet-950 p-2 py-1 text-sm font-bold text-white rounded-md mx-1"
+                      className="bg-violet-800 hover:bg-violet-950 p-2 py-1 text-sm font-bold text-white rounded-md mx-1 cursor-pointer"
                     >
                       <AiFillDelete />
                     </button>
