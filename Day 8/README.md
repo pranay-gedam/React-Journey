@@ -1,12 +1,32 @@
-# React + Vite
+# Day 8 - To-Do App with Local Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Features Implemented
+- Created a **To-Do App** in React
+- Added ability to **add new tasks**
+- Implemented **edit** and **delete** functionality for tasks
+- Added a **checkbox** to mark tasks as completed
+- Used **localStorage** to persist tasks even after page reload
+- Displayed completed tasks separately with visual distinction
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- Used **useState** hook to manage tasks dynamically
+- Used **useEffect** hook to sync tasks with localStorage
+- Implemented controlled input for adding and editing tasks
+- Added conditional rendering for finished vs. unfinished tasks
+- Improved UI by showing completed tasks with a checkbox toggle.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Learning
 
-## Expanding the ESLint configuration
+Gained hands-on practice with state management in React
+Learned to persist data using localStorage
+Improved understanding of event handling (add, edit, delete, complete actions)
+Understood how to conditionally render UI elements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Next Focus
+
+Dive into React Router to handle navigation across multiple pages
+Learn concepts like:
+BrowserRouter, Routes, and Route
+Navigation using Link and useNavigate
+Passing state between routes
+Dynamic routing
