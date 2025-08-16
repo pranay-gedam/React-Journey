@@ -1,12 +1,32 @@
-# React + Vite
+# Day 9 - React Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Topics Covered
+- Introduction to **React Router**
+- Setting up **BrowserRouter** in the app
+- Using **Routes** and **Route** to define multiple pages
+- Navigating with **Link** instead of anchor tags
+- Using **useNavigate** hook for programmatic navigation
+- Passing parameters with **Dynamic Routes**
+- Handling a simple **Not Found (404)** page
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- React Router allows us to build **multi-page experiences** in a single-page React app  
+- `BrowserRouter` wraps the entire app to enable routing  
+- `Routes` is used to wrap all route definitions, and `Route` maps a path to a component  
+- `Link` helps in navigation without reloading the page  
+- `useNavigate` gives more control to navigate programmatically (e.g., after form submission)  
+- Dynamic routes (`/user/:id`) allow us to pass data through the URL.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Learning
 
-## Expanding the ESLint configuration
+Learned how to set up React Router in a project
+Understood the importance of client-side routing for seamless navigation
+Practiced defining routes, navigating between them, and handling dynamic routing
+Experienced how useNavigate can improve user flow
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Next Focus
+
+Explore nested routes for structured navigation
+Learn about Route parameters in detail
+Handle protected routes (authentication-based routing)
+Start integrating API data with routing for real-world scenarios
