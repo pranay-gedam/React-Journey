@@ -26,7 +26,4 @@ Experienced how useNavigate can improve user flow
 
 🎯 Next Focus
 
-Explore nested routes for structured navigation
-Learn about Route parameters in detail
-Handle protected routes (authentication-based routing)
-Start integrating API data with routing for real-world scenarios
+UseContext Hook in React
