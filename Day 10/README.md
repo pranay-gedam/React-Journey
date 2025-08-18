@@ -1,12 +1,27 @@
-# React + Vite
+# Day 10 - useContext Hook in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Topics Covered
+- Introduction to **Context API** in React
+- Why we use Context: avoiding **prop drilling**
+- Creating a **Context** using `createContext`
+- Providing values with **Context.Provider**
+- Consuming values using **useContext** hook
+- Sharing state across multiple components easily
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- Context API allows data to be shared globally without passing props down manually at every level  
+- `createContext()` is used to create a context object  
+- The **Provider** component supplies the value to its children  
+- `useContext(SomeContext)` is the easiest way to consume context values in functional components  
+- Great for **theme switching, authentication, and user preferences**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Learning
 
-## Expanding the ESLint configuration
+Understood how Context helps in managing global state
+Practiced creating and consuming context using useContext
+Implemented a simple theme toggle example using Context
+Realized that Context works best for global, app-wide data rather than frequently changing data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Next Focus
+
+Learn about useMemo hook to optimize performance and prevent unnecessary re-renders
