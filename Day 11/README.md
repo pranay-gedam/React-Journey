@@ -13,6 +13,10 @@
   ```jsx
   const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
+Runs only when dependencies change
+Great for heavy calculations, filtered lists, or derived data
+Should not be overused – mainly for performance optimization
+
 📖 Learning
 
 Learned how useMemo improves performance by avoiding recalculations
