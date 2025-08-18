@@ -1,12 +1,32 @@
-# React + Vite
+# Day 12 - useCallback Hook in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Topics Covered
+- What is **useCallback** and why it’s used
+- Difference between **useMemo** and **useCallback**
+- How `useCallback` helps in **function memoization**
+- Preventing unnecessary re-creations of functions
+- Improving performance when passing callbacks to child components
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- `useCallback` returns a **memoized version of a function**
+- Syntax:  
+  ```jsx
+  const memoizedCallback = useCallback(() => {
+    // function logic
+  }, [dependencies]);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Useful when:
 
-## Expanding the ESLint configuration
+Passing functions to child components wrapped with React.memo
+Avoiding re-renders caused by function identity changes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📖 Learning
+
+Learned how useCallback avoids unnecessary function re-creations
+Understood its importance with React.memo to optimize child component rendering
+Explored difference between useMemo (for values) and useCallback (for functions)
+
+🎯 Next Focus
+
+Learn about handling forms in React
+Connect React frontend with an Express backend for data handling
