@@ -1,12 +1,34 @@
-# React + Vite
+# Day 13 - Handling Forms & Connecting React to Express
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Topics Covered
+- Basics of **form handling** in React  
+- Managing **controlled components** with `useState`  
+- Handling form **submission events**  
+- Connecting React frontend to an **Express backend**  
+- Sending and receiving data using **fetch / Axios**  
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- Controlled components keep form inputs synced with state:
+  ```jsx
+  const [name, setName] = useState("");
+  <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Always prevent default form refresh using event.preventDefault()
+Data can be sent to Express backend with a POST request
+Express handles requests with:
 
-## Expanding the ESLint configuration
+app.post("/api/data", (req, res) => {
+  res.json({ message: "Data received", data: req.body });
+});
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ensured CORS setup for frontend-backend communication
+
+📖 Learning
+
+Learned how to create controlled forms in React
+Understood how to connect frontend and backend using fetch API
+Practiced handling form submission and integrating with Express server
+
+🎯 Next Focus
+
+Learn about Redux for global state management in React
