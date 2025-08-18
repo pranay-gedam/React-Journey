@@ -1,12 +1,25 @@
-# React + Vite
+# Day 11 - useMemo Hook in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Topics Covered
+- What is **useMemo** and why it’s useful
+- Difference between **useMemo** and **useEffect**
+- Memoization to optimize expensive calculations
+- Preventing unnecessary re-renders
+- Dependency array and how it controls memoization
 
-Currently, two official plugins are available:
+## 📝 Key Notes
+- `useMemo` caches the result of a function so it doesn’t re-run on every render  
+- Syntax:  
+  ```jsx
+  const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Learning
 
-## Expanding the ESLint configuration
+Learned how useMemo improves performance by avoiding recalculations
+Implemented memoization in a heavy calculation function
+Understood that useMemo is useful when a function is computationally expensive
+Learned that it should be used only when necessary
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Next Focus
+
+Learn about useCallback hook to memoize functions and prevent unnecessary re-creations
