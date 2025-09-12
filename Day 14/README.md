@@ -1,4 +1,4 @@
-# Day 24 - Redux Basics: Store, Actions & Reducers
+# Day 14 - Redux Basics: Store, Actions & Reducers
 
 ## 📌 Topics Covered
 - Introduction to **Redux**  
